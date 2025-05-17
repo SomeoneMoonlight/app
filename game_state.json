@@ -1,0 +1,23 @@
+{
+  "players": {
+    "123456789012345678": {
+      "name": "Alice",
+      "hand": {
+        "wood": 0,
+        "brick": 0,
+        "sheep": 0,
+        "wheat": 0,
+        "ore": 0,
+        "gold": 0
+      },
+      "buildings": {
+        "4": { "wood": { "settlement": 1, "city": 0, "fortress": 0 } },
+        "6": { "brick": { "city": 1 } },
+        "8": { "sheep": { "settlement": 2 } }
+      }
+    }
+  },
+  "active_battle": null
+}
+
+
