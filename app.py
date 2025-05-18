@@ -4,10 +4,10 @@ import os
 import json
 import random
 from keep_alive import keep_alive
+from dotenv import load_dotenv
 
-
-
-TOKEN = os.env('DISCORD_BOT_TOKEN')
+load_dotenv()
+TOKEN = os.getenv('DISCORD_BOT_TOKEN')
 
 # ─── Persistence Snippet ───────────────────────────────────────────────────────
 DATA_FILE = "game_state.json"
