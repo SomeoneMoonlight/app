@@ -7,7 +7,7 @@ from keep_alive import keep_alive
 
 
 
-TOKEN = os.environ('DISCORD_BOT_TOKEN')
+TOKEN = os.environ['DISCORD_BOT_TOKEN']
 
 # ─── Persistence Snippet ───────────────────────────────────────────────────────
 DATA_FILE = "game_state.json"
