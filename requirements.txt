@@ -1,4 +1,4 @@
-pip freeze > requirements.txt
+
 python-dotenv==16.5.0
 discord.py
 flask
