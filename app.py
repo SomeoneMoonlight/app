@@ -46,15 +46,17 @@ def deduct_resources(hand, cost):
     for r in cost:
         hand[r] -= cost[r]
 
+async def invisible_keep_alive():
+    while True:
+        # Just sleep — keeps event loop active without doing anything
+        await asyncio.sleep(300)
+
 @bot.event
 async def on_ready():
     print(f'Logged in as {bot.user}')
     bot.loop.create_task(invisible_keep_alive())
 
-async def invisible_keep_alive():
-    while True:
-        # Just sleep — keeps event loop active without doing anything
-        await asyncio.sleep(300)
+
 
 @bot.command()
 async def join(ctx):
