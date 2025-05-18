@@ -368,4 +368,4 @@ async def cancel(ctx):
 
 
 keep_alive()
-bot.run("TOKEN")
+bot.run(TOKEN)
