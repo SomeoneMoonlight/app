@@ -4,6 +4,10 @@ import os
 import json
 import random
 from keep_alive import keep_alive
+from dotenv import load_dotenv
+
+load_dotenv()
+TOKEN = os.getenv('DISCORD_BOT_TOKEN')
 
 # ─── Persistence Snippet ───────────────────────────────────────────────────────
 DATA_FILE = "game_state.json"
@@ -365,4 +369,4 @@ async def cancel(ctx):
 
 keep_alive()
 bot.run(
-    "MTM3MzM1OTM5OTI3NTMzMTcwNQ.GkUTrn.RF4N5rGxO7D2r9k9zeqyywg_AHtXoM3Wba2jg4")
+    "TOKEN")
